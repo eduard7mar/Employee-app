@@ -86,7 +86,7 @@ class App extends Component {
     }
 
     return items.filter(item => {
-      return item.name.indexOf(term) > -1
+      return item.name.toUpperCase().indexOf(term.toUpperCase()) > -1
     })  
   }
 
